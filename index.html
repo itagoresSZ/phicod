@@ -57,9 +57,8 @@
                     <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Softwares personalizados, criados para atender às demandas específicas de cada negócio, garantindo resultados alinhados às necessidades do mercado.</p>
                   </div>
                   <div class="relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
-                    <div class="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
-                      <img class="size-full object-cover object-top" src="https://tailwindui.com/plus/img/component-images/bento-03-mobile-friendly.png" alt="">
-                    </div>
+                    <img class="size-full object-cover object-top" src="src/img/ui-ux-representations-with-smartphone.png" alt="">
+                    
                   </div>
                 </div>
                 <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-l-[2rem]"></div>
@@ -107,11 +106,36 @@
                           <div class="border-r border-gray-600/10 px-4 py-2">App.jsx</div>
                         </div>
                       </div>
-                      <div class="px-6 pb-14 pt-6">
+                      <div class="px-6 pb-14 pt-6 text-blue-400">
+
+                        import <span class="text-yellow-200">Phi</span> from <span class="text-red-300">"./Phi"</span>
+                        <br/>
+                        import <span class="text-red-300">"moment/locale/pt-br"</span>;
+                        <br/>
+                        moment.locale <span class="text-yellow-200"></span>(<span class="text-red-300">"pt-br"</span> <span class="text-yellow-200"></span>);
+
+                        <br/>
+                        <br/>
                         <!-- Your code example -->
-                         return &lt;App&gt;
-                         &lt;phi.cod /&gt;
-                         &lt;/App&gt;
+                         const  <span class="text-yellow-200">MyApp</span> =  <span class="text-yellow-200">()</span> => {
+                          <br/>
+                          <br/>
+                          &nbsp;const [ <span class="text-yellow-200">lang</span>,  <span class="text-yellow-200">setLang</span>] = useState<string> <span class="text-yellow-200">(</span><span class="text-red-300">"pt"</span> <span class="text-yellow-200">)</span>;
+                            <br/>
+                            &nbsp;const {  <span class="text-yellow-200">user</span> } = useSession <span class="text-yellow-200">()</span>;
+                          <br/>
+                          <br/>
+                          &nbsp;<span class="text-red-300">return</span> &lt;&gt;
+                         <br/>
+                         &nbsp;&nbsp; &lt; <span class="text-yellow-200">Phi.cod</span> user={ <span class="text-yellow-200">user</span>} /&gt;
+                         <br/>
+                         &nbsp;&lt;/&gt;
+                         <br/>
+                        }
+                        
+                        <br/>
+                        <br/>
+                      export default  <span class="text-yellow-200">MyApp</span>;
                       </div>
                     </div>
                   </div>
